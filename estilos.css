@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background: url("./img/Fondo.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 20cm;
+	}
+	.capa{
+		position: fixed;
+		width: 500%;
+		height: 500vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+
+	header{
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: space-around;
+			transition: 0.7s;
+			padding: 30px 20px;
+                        width: 100%;
+		        height: 100px;
+		        position: fixed;
+		        top: 0;left: 0;
+			
+		}
+		header.abajo{
+			background: #7A7A7A;
+			padding: 15px 20px;
+		}
+		
+
+		header ul{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		header ul li{
+			list-style: none;
+		}
+
+		header ul li a{
+			position: relative;
+			margin: 0 15px;
+			text-decoration: none;
+			color: #fff;
+			letter-spacing: 2px;
+			font-weight: 600;
+			transition: 0.7s;
+		}
+
+		header.abajo,
+		header.abajo ul li{
+			color: #000;
+		}
+
+
+
+
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: fixed;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+
+     /*Textos*/
+
+
+        .secciones{
+		 width: 100%;
+                 background: #c7c7c7;
+                }
+         .banner{
+                 text-align: center;
+                 Padding-top: 0.5em;
+                 font-size:60px;
+                }
+
+         .secciones article{
+		 Padding: 40px;
+                 text-align: justify;
+                 font-size:20px;
+                }
+          .tabla{
+		 width: 100%;
+                 background: #000000;
+                }
+          *{
+	font-family: sans-serif;
+
+}
+
+.fab{
+    width: 41px;
+    text-align: center;
+    font-size: 22px;
+}
+.social{
+    position: fixed;
+    left: -10px;
+    top: 250px;
+}
+
+.social ul{
+list-style:none;
+}
+
+
+.social a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 0;
+    transition: 0.2s ease;
+}
+.fa-facebook-f{
+    background: #3b5998;
+}
+.fa-twitter{
+    background: #00abf0;
+}
+.fa-get-pocket{
+    background: #ae181f;
+}
+.fa-facebook-messenger{
+    background: #0084ff;
+}
+.fa-whatsapp{
+    background: #25d366;
+}
+.fa-google-plus-g{
+    background: #d95232;
+}
+.social a:hover{
+    padding: 10px 25px;
+}
+      
+
+
+
+
+
+
+
+
+
+
+
+
